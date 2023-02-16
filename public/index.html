@@ -1,0 +1,64 @@
+<html lang="en">
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="chat.css" type="text/css" />
+  </head>
+  <body>
+    <div class="container-fluid h-50">
+      <div class="row justify-content-center h-100">
+        <div class="col-md-8 col-xl-6 chat pt-5">
+          <div class="card">
+            <div class="card-body msg_card_body">
+              <br />
+              <div id="output" class="chat_content"></div>
+              <div id="answer"></div>
+            </div>
+            <div class="card-footer">
+              <div class="input-group">
+                <input
+                  type="text"
+                  id="name"
+                  placeholder="Enter your name here.."
+                />
+                <input
+                  type="text"
+                  id="message"
+                  class="form-control type_msg"
+                  placeholder="Type your message..."
+                />
+                <div class="input-group-append">
+                  <button
+                    id="send"
+                    type="submit"
+                    name="action"
+                    class="input-group-text send_btn"
+                  >
+                    <i class="fas fa-location-arrow"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.6.0/socket.io.js"
+      integrity="sha512-rwu37NnL8piEGiFhe2c5j4GahN+gFsIn9k/0hkRY44iz0pc81tBNaUN56qF8X4fy+5pgAAgYi2C9FXdetne5sQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="chat.js"></script>
+  </body>
+</html>
+
